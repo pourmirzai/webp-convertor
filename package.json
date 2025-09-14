@@ -1,0 +1,15 @@
+{
+  "name": "webp-converter",
+  "version": "1.0.0",
+  "description": "Image to WebP converter with resize and quality control",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron ."
+  },
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^25.0.0"
+  }
+}
