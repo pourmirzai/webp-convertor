@@ -24,13 +24,10 @@ jobs:
     - name: Build application
       run: npm run build-win
 
-    - name: Create Release
-      uses: softprops/action-gh-release@v1
+    - name: Upload artifacts
+      uses: actions/upload-artifact@v3
       with:
-        files: |
+        name: WebP-Converter-Windows
+        path: |
           dist/*.exe
           dist/win-unpacked/**/*
-        draft: true
-        prerelease: false
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
