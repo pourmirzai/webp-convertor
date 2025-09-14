@@ -23,6 +23,58 @@ A desktop application for converting images to WebP format with advanced resizin
    npm install
    ```
 
+## Building for Distribution
+
+### Local Build (Recommended)
+
+To create a Windows executable on your local machine:
+
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+2. Build for Windows:
+   ```bash
+   npm run build-win
+   ```
+
+This creates a `dist/` folder with:
+- `WebP Converter Setup X.X.X.exe` - Professional Windows installer
+- `win-unpacked/` - Portable version (can run without installation)
+
+### Automated GitHub Build (Optional)
+
+If you want automatic builds on GitHub:
+
+1. **Push to GitHub**: Upload your project to a GitHub repository
+2. **Create Release**: Push a version tag to trigger automatic build:
+   ```bash
+   git tag v1.0.0
+   git push origin v1.0.0
+   ```
+3. **Download**: GitHub Actions will build and attach the `.exe` to the release
+
+The workflow file `.github/workflows/build.yml` handles this automatically.
+
+### Alternative Build Commands
+
+```bash
+# Build for current platform
+npm run build
+
+# Build for all platforms (Windows, macOS, Linux)
+npm run dist
+```
+
+### Build Configuration
+
+The `package.json` build config includes:
+- NSIS installer for professional setup experience
+- Custom app ID and product name
+- Proper file exclusions (node_modules, etc.)
+- Output directory: `dist/`
+
 ## Usage
 
 ### Running the Application
