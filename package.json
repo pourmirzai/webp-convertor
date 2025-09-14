@@ -12,11 +12,9 @@
   },
   "author": "Your Name",
   "license": "MIT",
-  "dependencies": {
-    "electron": "^25.0.0"
-  },
   "devDependencies": {
-    "electron-builder": "^24.13.3"
+    "electron": "^25.0.0",
+    "electron-builder": "^24.0.0"
   },
   "build": {
     "appId": "com.webpconverter.app",
