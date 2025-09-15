@@ -1,6 +1,6 @@
 {
   "name": "webp-converter",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "Image to WebP converter with resize and quality control",
   "main": "main.js",
   "scripts": {
@@ -10,7 +10,7 @@
     "build-win": "electron-builder --win",
     "dist": "electron-builder"
   },
-  "author": "Your Name",
+  "author": "Morteza",
   "license": "MIT",
   "devDependencies": {
     "electron": "^25.0.0",
@@ -39,7 +39,7 @@
     },
     "publish": {
       "provider": "github",
-      "owner": "your-github-username",
+      "owner": "pourmirzai",
       "repo": "webp-converter"
     }
   }
