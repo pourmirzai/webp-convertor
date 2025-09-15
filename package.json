@@ -40,7 +40,7 @@
     "publish": {
       "provider": "github",
       "owner": "pourmirzai",
-      "repo": "webp-converter"
+      "repo": "webp-convertor"
     }
   }
 }
