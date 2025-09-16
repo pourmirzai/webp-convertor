@@ -14,7 +14,8 @@
   "license": "MIT",
   "devDependencies": {
     "electron": "^25.0.0",
-    "electron-builder": "^24.0.0"
+    "electron-builder": "^24.0.0",
+    "electron-packager": "^17.1.2"
   },
   "build": {
     "appId": "com.webpconverter.app",
@@ -30,17 +31,16 @@
       "!docs/**/*"
     ],
     "win": {
-      "target": "nsis",
-      "icon": "icon.ico"
+      "target": "portable",
+      "icon": "icon.ico",
+      "certificateFile": null,
+      "certificatePassword": null,
+      "verifyUpdateCodeSignature": false,
+      "sign": false
     },
     "nsis": {
       "oneClick": false,
       "allowToChangeInstallationDirectory": true
-    },
-    "publish": {
-      "provider": "github",
-      "owner": "pourmirzai",
-      "repo": "webp-convertor"
     }
   }
 }
