@@ -1,6 +1,6 @@
 {
   "name": "webp-converter",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Image to WebP converter with resize and quality control",
   "main": "main.js",
   "scripts": {
