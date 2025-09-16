@@ -25,14 +25,10 @@ jobs:
       run: npm ci
 
     - name: Build application
-      run: npm run build-win
-      env:
-        GH_TOKEN: ${{ secrets.GH_TOKEN }}
+      run: npx electron-packager . "WebP Converter" --platform=win32 --arch=x64 --out=dist
 
     - name: Upload artifacts
       uses: actions/upload-artifact@v4
       with:
         name: WebP-Converter-Windows
-        path: |
-          dist/*.exe
-          dist/win-unpacked/**/*
+        path: dist/WebP Converter-win32-x64/**/*

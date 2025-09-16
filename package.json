@@ -33,8 +33,6 @@
     "win": {
       "target": "portable",
       "icon": "icon.ico",
-      "certificateFile": null,
-      "certificatePassword": null,
       "verifyUpdateCodeSignature": false,
       "sign": false
     },
